@@ -1,0 +1,30 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="slider.css" />
+
+</head>
+<body>
+    <div id='play'></div>
+    <div class='slider' id='slider'>
+        <div class='slide fade'>Image 1</div>
+        <div class='slide fade'>Image 2</div>
+        <div class='slide fade'>Image 3</div>
+        <button class='prev' onclick='plusSlides(-1)'>&#10094</button>
+        <button class='next' onclick='plusSlides(1)'>&#10095</button>
+    </div>
+
+    <div class='dots'>
+        <span class='dot' onclick='currentSlide(1)'></span>
+        <span class='dot' onclick='currentSlide(2)'></span>
+        <span class='dot' onclick='currentSlide(3)'></span>
+    </div>
+    <script src="index.js"></script>
+    <script src="slider.js"></script>  
+</body>
+</html>
