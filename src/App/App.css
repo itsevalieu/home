@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Rancho');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Gochi+Hand');
+.app {
+  height: 100vh;
+  background: rgba(237,237,237,1);
+  background: -moz-linear-gradient(45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(45deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+  border-bottom: 50px solid;
+  border-image: url("./whiteboard.jpg") 65 round;
+  position: relative;
+  z-index: 0;
+}
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 50px;
+  border-radius: 50%;
+  margin: 15px;
+  box-shadow: 2px 2px 5px 0px #333;
+}
+.app-header {
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.6em;
+  font-family: 'Fredericka the Great';
+}
+.app-header__logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.app-header__logo-name {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: darkcyan;
+}
+.app-header__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.app-link {
+  color: #000;
+  text-decoration: none;
+  margin: 0 15px 0 0;
+}
+.app-link:active, .app-link:hover {
+  color: darkcyan;
+}
+.whiteboard {
+  max-height: 100%;
+  /* border: 1px solid red; */
+  font-family: 'Cantarell';
+  padding: 25px 50px;
+}
+.footer {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .app {
+    border-image: url("./whiteboard.jpg") 100 500 stretch;
+  }
+  .app-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .app {
+    border-image: url("./whiteboard.jpg") 100 500 stretch;
+  }
+  .app-header {
+    flex-direction: column;
+  }
+}
+/** MOBILE STYLES **/
+@media only screen and (max-device-width: 768px) {
+  .app {
+    border-image: url("./whiteboard.jpg") 100 500 stretch;
+  }
+  .app-header {
+    flex-direction: column;
+  }
+}
